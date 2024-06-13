@@ -10,7 +10,7 @@ import SnapKit
 
 //MARK: - Interfaces
 protocol FirstDisplayLogicProtocol: AnyObject {
-    
+    func updateBackgroundColor()
 }
 
 //MARK: - FirstViewController
@@ -89,7 +89,10 @@ final class FirstViewController: UIViewController {
     }
     
     @objc private func onFromInteractorTap() {
+        view.backgroundColor = .green
+
         Task {
+            try await Task.sleep(nanoseconds: 2_000_000_000)
             await interactor.fetchData()
         }
     }
@@ -97,5 +100,7 @@ final class FirstViewController: UIViewController {
 
 //MARK: - FirstDisplayLogicProtocol
 extension FirstViewController: FirstDisplayLogicProtocol {
-    
+    func updateBackgroundColor() {
+        view.backgroundColor = .red
+    }
 }

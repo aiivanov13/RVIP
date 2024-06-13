@@ -10,7 +10,7 @@ import Foundation
 //MARK: - Interfaces
 @MainActor
 protocol SecondPresentationLogicProtocol {
-    func presentData(_ data: SecondData)
+    func presentData(_ data: SecondData) async
 }
 
 //MARK: - SecondPresenter
@@ -21,7 +21,7 @@ final class SecondPresenter {
 
 //MARK: - SecondPresentationLogicProtocol
 extension SecondPresenter: SecondPresentationLogicProtocol {
-    func presentData(_ data: SecondData) {
+    func presentData(_ data: SecondData) async {
         view.displayData(title: data.title)
     }
 }
