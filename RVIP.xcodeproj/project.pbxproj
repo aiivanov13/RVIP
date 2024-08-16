@@ -7,6 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F602B6F62C57CCB700A22EC7 /* AppearanceFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602B6F52C57CCB700A22EC7 /* AppearanceFonts.swift */; };
+		F602B6F82C57D22800A22EC7 /* AppearanceColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602B6F72C57D22800A22EC7 /* AppearanceColors.swift */; };
+		F602B6FA2C57D23100A22EC7 /* AppearanceImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602B6F92C57D23100A22EC7 /* AppearanceImages.swift */; };
+		F602B6FD2C57D72D00A22EC7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F602B6FC2C57D72D00A22EC7 /* SnapKit */; };
+		F602B7002C57D7BA00A22EC7 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F602B6FF2C57D7BA00A22EC7 /* Colors.xcassets */; };
+		F602B7022C57D7C800A22EC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F602B7012C57D7C800A22EC7 /* Images.xcassets */; };
+		F602B7082C57DE5700A22EC7 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602B7072C57DE5700A22EC7 /* Localization.swift */; };
+		F602B7142C57E03200A22EC7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F602B7122C57E03200A22EC7 /* Localizable.strings */; };
+		F607A9AC2C5B6FD20023ADEF /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F607A9AB2C5B6FD20023ADEF /* BaseCoordinator.swift */; };
+		F607A9AF2C5B700E0023ADEF /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F607A9AE2C5B700E0023ADEF /* SecondCoordinator.swift */; };
+		F607A9B12C5B70180023ADEF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F607A9B02C5B70180023ADEF /* AppCoordinator.swift */; };
+		F607A9B42C5B70950023ADEF /* FirstCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F607A9B32C5B70950023ADEF /* FirstCoordinator.swift */; };
+		F6121AA02C58F56B00EA0C3F /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6121A9F2C58F56B00EA0C3F /* BaseController.swift */; };
+		F6121AA52C58F6CB00EA0C3F /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6121AA42C58F6CB00EA0C3F /* LoaderView.swift */; };
+		F6121AA72C58F7BB00EA0C3F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6121AA62C58F7BB00EA0C3F /* HeaderView.swift */; };
+		F6121AA92C58FF5C00EA0C3F /* KeyboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6121AA82C58FF5C00EA0C3F /* KeyboardService.swift */; };
+		F6121AAC2C59102200EA0C3F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6121AAB2C59102200EA0C3F /* UIView+Extensions.swift */; };
+		F6121AAE2C59128600EA0C3F /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6121AAD2C59128600EA0C3F /* BaseButton.swift */; };
+		F6121AB02C592BCC00EA0C3F /* LoaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6121AAF2C592BCC00EA0C3F /* LoaderProtocol.swift */; };
+		F61DDFF62C6F8EF100B1EC2A /* Task+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61DDFF52C6F8EF100B1EC2A /* Task+Extensions.swift */; };
+		F61DDFF82C6F936700B1EC2A /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61DDFF72C6F936700B1EC2A /* Appearance.swift */; };
+		F65BFE342C59F7BA00060141 /* BaseLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BFE332C59F7BA00060141 /* BaseLocalization.swift */; };
+		F65BFE382C5A547B00060141 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BFE372C5A547B00060141 /* BaseViewController.swift */; };
+		F65BFE3E2C5A583E00060141 /* DialogProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BFE3D2C5A583E00060141 /* DialogProtocol.swift */; };
+		F65BFE402C5A59F100060141 /* LoaderViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BFE3F2C5A59F100060141 /* LoaderViewProtocol.swift */; };
+		F65BFE432C5A5B6000060141 /* DialogProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BFE422C5A5B6000060141 /* DialogProtocol+Extension.swift */; };
+		F65BFE452C5A5C2000060141 /* ToastProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BFE442C5A5C2000060141 /* ToastProtocol.swift */; };
+		F65BFE472C5A5CC500060141 /* ToastProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BFE462C5A5CC500060141 /* ToastProtocol+Extension.swift */; };
+		F65BFE492C5A5D2A00060141 /* BaseToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BFE482C5A5D2A00060141 /* BaseToastView.swift */; };
+		F65BFE4C2C5A5ECA00060141 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BFE4B2C5A5ECA00060141 /* ToastView.swift */; };
+		F65BFE522C5A64EA00060141 /* CompactDictionaryRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BFE4E2C5A64EA00060141 /* CompactDictionaryRepresentable.swift */; };
+		F65BFE532C5A64EA00060141 /* AsyncHttpJsonClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BFE4F2C5A64EA00060141 /* AsyncHttpJsonClient.swift */; };
+		F65BFE542C5A64EA00060141 /* AsyncHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BFE502C5A64EA00060141 /* AsyncHttpClient.swift */; };
+		F65BFE552C5A64EA00060141 /* ISO8601DateFormatterEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BFE512C5A64EA00060141 /* ISO8601DateFormatterEx.swift */; };
+		F65BFE572C5A656C00060141 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BFE562C5A656C00060141 /* NetworkManager.swift */; };
 		F6769EEF2C1ADCF200593E3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769EEE2C1ADCF200593E3E /* AppDelegate.swift */; };
 		F6769EF12C1ADCF200593E3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769EF02C1ADCF200593E3E /* SceneDelegate.swift */; };
 		F6769EF32C1ADCF200593E3E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769EF22C1ADCF200593E3E /* FirstViewController.swift */; };
@@ -14,21 +49,65 @@
 		F6769EFB2C1ADCF300593E3E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F6769EFA2C1ADCF300593E3E /* Base */; };
 		F6769F082C1ADDB900593E3E /* FirstInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769F072C1ADDB900593E3E /* FirstInteractor.swift */; };
 		F6769F0A2C1ADDC300593E3E /* FirstPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769F092C1ADDC300593E3E /* FirstPresenter.swift */; };
-		F6769F0D2C1ADDDC00593E3E /* FirstAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769F0C2C1ADDDC00593E3E /* FirstAssembly.swift */; };
-		F6769F0F2C1ADEDF00593E3E /* FirstRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769F0E2C1ADEDF00593E3E /* FirstRouter.swift */; };
 		F6769F112C1AF94300593E3E /* FirstData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769F102C1AF94300593E3E /* FirstData.swift */; };
 		F6769F132C1AF9CB00593E3E /* FirstWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769F122C1AF9CB00593E3E /* FirstWorker.swift */; };
-		F6769F2A2C1B006B00593E3E /* SecondAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769F1B2C1B006B00593E3E /* SecondAssembly.swift */; };
 		F6769F2B2C1B006B00593E3E /* SecondData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769F1D2C1B006B00593E3E /* SecondData.swift */; };
 		F6769F2C2C1B006B00593E3E /* SecondInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769F1F2C1B006B00593E3E /* SecondInteractor.swift */; };
 		F6769F2D2C1B006B00593E3E /* SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769F212C1B006B00593E3E /* SecondPresenter.swift */; };
-		F6769F2E2C1B006B00593E3E /* SecondRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769F232C1B006B00593E3E /* SecondRouter.swift */; };
 		F6769F2F2C1B006B00593E3E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769F252C1B006B00593E3E /* SecondViewController.swift */; };
 		F6769F302C1B006B00593E3E /* SecondWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6769F272C1B006B00593E3E /* SecondWorker.swift */; };
-		F6769F332C1B03B900593E3E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F6769F322C1B03B900593E3E /* SnapKit */; };
+		F6EFC2972C5CBA9D00D221B8 /* FourthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFC27D2C5CBA9D00D221B8 /* FourthCoordinator.swift */; };
+		F6EFC2982C5CBA9D00D221B8 /* FourthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFC27F2C5CBA9D00D221B8 /* FourthData.swift */; };
+		F6EFC2992C5CBA9D00D221B8 /* FourthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFC2812C5CBA9D00D221B8 /* FourthInteractor.swift */; };
+		F6EFC29A2C5CBA9D00D221B8 /* FourthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFC2832C5CBA9D00D221B8 /* FourthPresenter.swift */; };
+		F6EFC29B2C5CBA9D00D221B8 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFC2852C5CBA9D00D221B8 /* FourthViewController.swift */; };
+		F6EFC29C2C5CBA9D00D221B8 /* FourthWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFC2872C5CBA9D00D221B8 /* FourthWorker.swift */; };
+		F6EFC29D2C5CBA9D00D221B8 /* ThirdCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFC28A2C5CBA9D00D221B8 /* ThirdCoordinator.swift */; };
+		F6EFC29E2C5CBA9D00D221B8 /* ThirdData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFC28C2C5CBA9D00D221B8 /* ThirdData.swift */; };
+		F6EFC29F2C5CBA9D00D221B8 /* ThirdInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFC28E2C5CBA9D00D221B8 /* ThirdInteractor.swift */; };
+		F6EFC2A02C5CBA9D00D221B8 /* ThirdPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFC2902C5CBA9D00D221B8 /* ThirdPresenter.swift */; };
+		F6EFC2A12C5CBA9D00D221B8 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFC2922C5CBA9D00D221B8 /* ThirdViewController.swift */; };
+		F6EFC2A22C5CBA9D00D221B8 /* ThirdWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFC2942C5CBA9D00D221B8 /* ThirdWorker.swift */; };
+		F6EFC2A62C5CC93700D221B8 /* FirstModuleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFC2A52C5CC93700D221B8 /* FirstModuleCoordinator.swift */; };
+		F6EFC2A82C5CD2FE00D221B8 /* SecondModuleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFC2A72C5CD2FE00D221B8 /* SecondModuleCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F602B6F52C57CCB700A22EC7 /* AppearanceFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceFonts.swift; sourceTree = "<group>"; };
+		F602B6F72C57D22800A22EC7 /* AppearanceColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceColors.swift; sourceTree = "<group>"; };
+		F602B6F92C57D23100A22EC7 /* AppearanceImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceImages.swift; sourceTree = "<group>"; };
+		F602B6FF2C57D7BA00A22EC7 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F602B7012C57D7C800A22EC7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F602B7072C57DE5700A22EC7 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		F602B7132C57E03200A22EC7 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F602B7152C57E06E00A22EC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F607A9AB2C5B6FD20023ADEF /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		F607A9AE2C5B700E0023ADEF /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
+		F607A9B02C5B70180023ADEF /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F607A9B32C5B70950023ADEF /* FirstCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCoordinator.swift; sourceTree = "<group>"; };
+		F6121A9F2C58F56B00EA0C3F /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		F6121AA42C58F6CB00EA0C3F /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		F6121AA62C58F7BB00EA0C3F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		F6121AA82C58FF5C00EA0C3F /* KeyboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardService.swift; sourceTree = "<group>"; };
+		F6121AAB2C59102200EA0C3F /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		F6121AAD2C59128600EA0C3F /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		F6121AAF2C592BCC00EA0C3F /* LoaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderProtocol.swift; sourceTree = "<group>"; };
+		F61DDFF52C6F8EF100B1EC2A /* Task+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Extensions.swift"; sourceTree = "<group>"; };
+		F61DDFF72C6F936700B1EC2A /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		F65BFE332C59F7BA00060141 /* BaseLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocalization.swift; sourceTree = "<group>"; };
+		F65BFE372C5A547B00060141 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F65BFE3D2C5A583E00060141 /* DialogProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogProtocol.swift; sourceTree = "<group>"; };
+		F65BFE3F2C5A59F100060141 /* LoaderViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewProtocol.swift; sourceTree = "<group>"; };
+		F65BFE422C5A5B6000060141 /* DialogProtocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DialogProtocol+Extension.swift"; sourceTree = "<group>"; };
+		F65BFE442C5A5C2000060141 /* ToastProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastProtocol.swift; sourceTree = "<group>"; };
+		F65BFE462C5A5CC500060141 /* ToastProtocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToastProtocol+Extension.swift"; sourceTree = "<group>"; };
+		F65BFE482C5A5D2A00060141 /* BaseToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseToastView.swift; sourceTree = "<group>"; };
+		F65BFE4B2C5A5ECA00060141 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		F65BFE4E2C5A64EA00060141 /* CompactDictionaryRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompactDictionaryRepresentable.swift; sourceTree = "<group>"; };
+		F65BFE4F2C5A64EA00060141 /* AsyncHttpJsonClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncHttpJsonClient.swift; sourceTree = "<group>"; };
+		F65BFE502C5A64EA00060141 /* AsyncHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncHttpClient.swift; sourceTree = "<group>"; };
+		F65BFE512C5A64EA00060141 /* ISO8601DateFormatterEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO8601DateFormatterEx.swift; sourceTree = "<group>"; };
+		F65BFE562C5A656C00060141 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		F6769EEB2C1ADCF200593E3E /* RVIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RVIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6769EEE2C1ADCF200593E3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6769EF02C1ADCF200593E3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,17 +117,27 @@
 		F6769EFC2C1ADCF300593E3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6769F072C1ADDB900593E3E /* FirstInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstInteractor.swift; sourceTree = "<group>"; };
 		F6769F092C1ADDC300593E3E /* FirstPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPresenter.swift; sourceTree = "<group>"; };
-		F6769F0C2C1ADDDC00593E3E /* FirstAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAssembly.swift; sourceTree = "<group>"; };
-		F6769F0E2C1ADEDF00593E3E /* FirstRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRouter.swift; sourceTree = "<group>"; };
 		F6769F102C1AF94300593E3E /* FirstData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstData.swift; sourceTree = "<group>"; };
 		F6769F122C1AF9CB00593E3E /* FirstWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstWorker.swift; sourceTree = "<group>"; };
-		F6769F1B2C1B006B00593E3E /* SecondAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondAssembly.swift; sourceTree = "<group>"; };
 		F6769F1D2C1B006B00593E3E /* SecondData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondData.swift; sourceTree = "<group>"; };
 		F6769F1F2C1B006B00593E3E /* SecondInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondInteractor.swift; sourceTree = "<group>"; };
 		F6769F212C1B006B00593E3E /* SecondPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondPresenter.swift; sourceTree = "<group>"; };
-		F6769F232C1B006B00593E3E /* SecondRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondRouter.swift; sourceTree = "<group>"; };
 		F6769F252C1B006B00593E3E /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F6769F272C1B006B00593E3E /* SecondWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondWorker.swift; sourceTree = "<group>"; };
+		F6EFC27D2C5CBA9D00D221B8 /* FourthCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthCoordinator.swift; sourceTree = "<group>"; };
+		F6EFC27F2C5CBA9D00D221B8 /* FourthData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthData.swift; sourceTree = "<group>"; };
+		F6EFC2812C5CBA9D00D221B8 /* FourthInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthInteractor.swift; sourceTree = "<group>"; };
+		F6EFC2832C5CBA9D00D221B8 /* FourthPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthPresenter.swift; sourceTree = "<group>"; };
+		F6EFC2852C5CBA9D00D221B8 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		F6EFC2872C5CBA9D00D221B8 /* FourthWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthWorker.swift; sourceTree = "<group>"; };
+		F6EFC28A2C5CBA9D00D221B8 /* ThirdCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdCoordinator.swift; sourceTree = "<group>"; };
+		F6EFC28C2C5CBA9D00D221B8 /* ThirdData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdData.swift; sourceTree = "<group>"; };
+		F6EFC28E2C5CBA9D00D221B8 /* ThirdInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdInteractor.swift; sourceTree = "<group>"; };
+		F6EFC2902C5CBA9D00D221B8 /* ThirdPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdPresenter.swift; sourceTree = "<group>"; };
+		F6EFC2922C5CBA9D00D221B8 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		F6EFC2942C5CBA9D00D221B8 /* ThirdWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWorker.swift; sourceTree = "<group>"; };
+		F6EFC2A52C5CC93700D221B8 /* FirstModuleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstModuleCoordinator.swift; sourceTree = "<group>"; };
+		F6EFC2A72C5CD2FE00D221B8 /* SecondModuleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondModuleCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +145,163 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6769F332C1B03B900593E3E /* SnapKit in Frameworks */,
+				F602B6FD2C57D72D00A22EC7 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F602B6F42C57CC9C00A22EC7 /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				F61DDFF72C6F936700B1EC2A /* Appearance.swift */,
+				F607A9AB2C5B6FD20023ADEF /* BaseCoordinator.swift */,
+				F6121A9F2C58F56B00EA0C3F /* BaseController.swift */,
+				F6121AA82C58FF5C00EA0C3F /* KeyboardService.swift */,
+				F65BFE3C2C5A581A00060141 /* ControllerProtocols */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		F602B6FE2C57D7A700A22EC7 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				F602B6F52C57CCB700A22EC7 /* AppearanceFonts.swift */,
+				F602B6F72C57D22800A22EC7 /* AppearanceColors.swift */,
+				F602B6F92C57D23100A22EC7 /* AppearanceImages.swift */,
+				F602B6FF2C57D7BA00A22EC7 /* Colors.xcassets */,
+				F602B7012C57D7C800A22EC7 /* Images.xcassets */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		F602B7062C57DE4A00A22EC7 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				F65BFE332C59F7BA00060141 /* BaseLocalization.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		F607A9AD2C5B6FFE0023ADEF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F607A9AE2C5B700E0023ADEF /* SecondCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F607A9B22C5B70850023ADEF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F607A9B32C5B70950023ADEF /* FirstCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F6121AA32C58F6BE00EA0C3F /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				F65BFE482C5A5D2A00060141 /* BaseToastView.swift */,
+				F6121AA62C58F7BB00EA0C3F /* HeaderView.swift */,
+				F6121AA42C58F6CB00EA0C3F /* LoaderView.swift */,
+				F6121AAD2C59128600EA0C3F /* BaseButton.swift */,
+				F65BFE4B2C5A5ECA00060141 /* ToastView.swift */,
+			);
+			path = BaseViews;
+			sourceTree = "<group>";
+		};
+		F6121AAA2C59101000EA0C3F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F6121AAB2C59102200EA0C3F /* UIView+Extensions.swift */,
+				F61DDFF52C6F8EF100B1EC2A /* Task+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F61DDFF32C6F86B400B1EC2A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F602B7062C57DE4A00A22EC7 /* Localization */,
+				F65BFE582C5A65C100060141 /* Network */,
+				F602B6F42C57CC9C00A22EC7 /* Architecture */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F61DDFF42C6F86C500B1EC2A /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				F6769F042C1ADD9D00593E3E /* Sources */,
+				F6121AA32C58F6BE00EA0C3F /* BaseViews */,
+				F65BFE3A2C5A575F00060141 /* BaseClasses */,
+				F6121AAA2C59101000EA0C3F /* Extensions */,
+				F602B6FE2C57D7A700A22EC7 /* Appearance */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		F65BFE3A2C5A575F00060141 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F65BFE412C5A5B3A00060141 /* ProtocolExtensions */,
+				F65BFE3B2C5A578400060141 /* Localization */,
+				F65BFE372C5A547B00060141 /* BaseViewController.swift */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		F65BFE3B2C5A578400060141 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				F602B7122C57E03200A22EC7 /* Localizable.strings */,
+				F602B7072C57DE5700A22EC7 /* Localization.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		F65BFE3C2C5A581A00060141 /* ControllerProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				F6121AAF2C592BCC00EA0C3F /* LoaderProtocol.swift */,
+				F65BFE3D2C5A583E00060141 /* DialogProtocol.swift */,
+				F65BFE3F2C5A59F100060141 /* LoaderViewProtocol.swift */,
+				F65BFE442C5A5C2000060141 /* ToastProtocol.swift */,
+			);
+			path = ControllerProtocols;
+			sourceTree = "<group>";
+		};
+		F65BFE412C5A5B3A00060141 /* ProtocolExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				F65BFE422C5A5B6000060141 /* DialogProtocol+Extension.swift */,
+				F65BFE462C5A5CC500060141 /* ToastProtocol+Extension.swift */,
+			);
+			path = ProtocolExtensions;
+			sourceTree = "<group>";
+		};
+		F65BFE4D2C5A64C900060141 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				F65BFE502C5A64EA00060141 /* AsyncHttpClient.swift */,
+				F65BFE4F2C5A64EA00060141 /* AsyncHttpJsonClient.swift */,
+				F65BFE4E2C5A64EA00060141 /* CompactDictionaryRepresentable.swift */,
+				F65BFE512C5A64EA00060141 /* ISO8601DateFormatterEx.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		F65BFE582C5A65C100060141 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F65BFE4D2C5A64C900060141 /* NetworkClient */,
+				F65BFE562C5A656C00060141 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		F6769EE22C1ADCF200593E3E = {
 			isa = PBXGroup;
 			children = (
@@ -82,8 +321,9 @@
 		F6769EED2C1ADCF200593E3E /* RVIP */ = {
 			isa = PBXGroup;
 			children = (
+				F61DDFF42C6F86C500B1EC2A /* Project */,
+				F61DDFF32C6F86B400B1EC2A /* Modules */,
 				F6769F022C1ADCFE00593E3E /* App */,
-				F6769F042C1ADD9D00593E3E /* Sources */,
 				F6769F032C1ADD4A00593E3E /* Resources */,
 				F6769EF92C1ADCF300593E3E /* LaunchScreen.storyboard */,
 			);
@@ -119,8 +359,9 @@
 		F6769F052C1ADDA200593E3E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F6769F292C1B006B00593E3E /* Second */,
-				F6769F062C1ADDA600593E3E /* First */,
+				F6EFC2A42C5CC92400D221B8 /* SecondModule */,
+				F6EFC2A32C5CC91900D221B8 /* FirstModule */,
+				F607A9B02C5B70180023ADEF /* AppCoordinator.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -128,11 +369,10 @@
 		F6769F062C1ADDA600593E3E /* First */ = {
 			isa = PBXGroup;
 			children = (
+				F607A9B22C5B70850023ADEF /* Coordinator */,
 				F6769F142C1AFE9500593E3E /* View */,
 				F6769F152C1AFE9D00593E3E /* Interactor */,
 				F6769F162C1AFEA400593E3E /* Presenter */,
-				F6769F172C1AFEAA00593E3E /* Assembly */,
-				F6769F182C1AFEAF00593E3E /* Router */,
 				F6769F192C1AFEB500593E3E /* Data */,
 				F6769F1A2C1AFEC200593E3E /* Worker */,
 			);
@@ -163,22 +403,6 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		F6769F172C1AFEAA00593E3E /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				F6769F0C2C1ADDDC00593E3E /* FirstAssembly.swift */,
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
-		F6769F182C1AFEAF00593E3E /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				F6769F0E2C1ADEDF00593E3E /* FirstRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		F6769F192C1AFEB500593E3E /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,14 +417,6 @@
 				F6769F122C1AF9CB00593E3E /* FirstWorker.swift */,
 			);
 			path = Worker;
-			sourceTree = "<group>";
-		};
-		F6769F1C2C1B006B00593E3E /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				F6769F1B2C1B006B00593E3E /* SecondAssembly.swift */,
-			);
-			path = Assembly;
 			sourceTree = "<group>";
 		};
 		F6769F1E2C1B006B00593E3E /* Data */ = {
@@ -227,14 +443,6 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		F6769F242C1B006B00593E3E /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				F6769F232C1B006B00593E3E /* SecondRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		F6769F262C1B006B00593E3E /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,15 +462,156 @@
 		F6769F292C1B006B00593E3E /* Second */ = {
 			isa = PBXGroup;
 			children = (
-				F6769F1C2C1B006B00593E3E /* Assembly */,
+				F607A9AD2C5B6FFE0023ADEF /* Coordinator */,
 				F6769F1E2C1B006B00593E3E /* Data */,
 				F6769F202C1B006B00593E3E /* Interactor */,
 				F6769F222C1B006B00593E3E /* Presenter */,
-				F6769F242C1B006B00593E3E /* Router */,
 				F6769F262C1B006B00593E3E /* View */,
 				F6769F282C1B006B00593E3E /* Worker */,
 			);
 			path = Second;
+			sourceTree = "<group>";
+		};
+		F6EFC27E2C5CBA9D00D221B8 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F6EFC27D2C5CBA9D00D221B8 /* FourthCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F6EFC2802C5CBA9D00D221B8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F6EFC27F2C5CBA9D00D221B8 /* FourthData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F6EFC2822C5CBA9D00D221B8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F6EFC2812C5CBA9D00D221B8 /* FourthInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F6EFC2842C5CBA9D00D221B8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F6EFC2832C5CBA9D00D221B8 /* FourthPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F6EFC2862C5CBA9D00D221B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6EFC2852C5CBA9D00D221B8 /* FourthViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6EFC2882C5CBA9D00D221B8 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				F6EFC2872C5CBA9D00D221B8 /* FourthWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		F6EFC2892C5CBA9D00D221B8 /* Fourth */ = {
+			isa = PBXGroup;
+			children = (
+				F6EFC27E2C5CBA9D00D221B8 /* Coordinator */,
+				F6EFC2802C5CBA9D00D221B8 /* Data */,
+				F6EFC2822C5CBA9D00D221B8 /* Interactor */,
+				F6EFC2842C5CBA9D00D221B8 /* Presenter */,
+				F6EFC2862C5CBA9D00D221B8 /* View */,
+				F6EFC2882C5CBA9D00D221B8 /* Worker */,
+			);
+			path = Fourth;
+			sourceTree = "<group>";
+		};
+		F6EFC28B2C5CBA9D00D221B8 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F6EFC28A2C5CBA9D00D221B8 /* ThirdCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F6EFC28D2C5CBA9D00D221B8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F6EFC28C2C5CBA9D00D221B8 /* ThirdData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F6EFC28F2C5CBA9D00D221B8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F6EFC28E2C5CBA9D00D221B8 /* ThirdInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F6EFC2912C5CBA9D00D221B8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F6EFC2902C5CBA9D00D221B8 /* ThirdPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F6EFC2932C5CBA9D00D221B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6EFC2922C5CBA9D00D221B8 /* ThirdViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6EFC2952C5CBA9D00D221B8 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				F6EFC2942C5CBA9D00D221B8 /* ThirdWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		F6EFC2962C5CBA9D00D221B8 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				F6EFC28B2C5CBA9D00D221B8 /* Coordinator */,
+				F6EFC28D2C5CBA9D00D221B8 /* Data */,
+				F6EFC28F2C5CBA9D00D221B8 /* Interactor */,
+				F6EFC2912C5CBA9D00D221B8 /* Presenter */,
+				F6EFC2932C5CBA9D00D221B8 /* View */,
+				F6EFC2952C5CBA9D00D221B8 /* Worker */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		F6EFC2A32C5CC91900D221B8 /* FirstModule */ = {
+			isa = PBXGroup;
+			children = (
+				F6EFC2A52C5CC93700D221B8 /* FirstModuleCoordinator.swift */,
+				F6769F292C1B006B00593E3E /* Second */,
+				F6769F062C1ADDA600593E3E /* First */,
+			);
+			path = FirstModule;
+			sourceTree = "<group>";
+		};
+		F6EFC2A42C5CC92400D221B8 /* SecondModule */ = {
+			isa = PBXGroup;
+			children = (
+				F6EFC2A72C5CD2FE00D221B8 /* SecondModuleCoordinator.swift */,
+				F6EFC2892C5CBA9D00D221B8 /* Fourth */,
+				F6EFC2962C5CBA9D00D221B8 /* Third */,
+			);
+			path = SecondModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +631,7 @@
 			);
 			name = RVIP;
 			packageProductDependencies = (
-				F6769F322C1B03B900593E3E /* SnapKit */,
+				F602B6FC2C57D72D00A22EC7 /* SnapKit */,
 			);
 			productName = RVIP;
 			productReference = F6769EEB2C1ADCF200593E3E /* RVIP.app */;
@@ -305,15 +654,16 @@
 			};
 			buildConfigurationList = F6769EE62C1ADCF200593E3E /* Build configuration list for PBXProject "RVIP" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				ru,
+				en,
 			);
 			mainGroup = F6769EE22C1ADCF200593E3E;
 			packageReferences = (
-				F6769F312C1B03B900593E3E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F602B6FB2C57D72D00A22EC7 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = F6769EEC2C1ADCF200593E3E /* Products */;
 			projectDirPath = "";
@@ -329,6 +679,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F602B7142C57E03200A22EC7 /* Localizable.strings in Resources */,
+				F602B7002C57D7BA00A22EC7 /* Colors.xcassets in Resources */,
+				F602B7022C57D7C800A22EC7 /* Images.xcassets in Resources */,
 				F6769EF82C1ADCF300593E3E /* Assets.xcassets in Resources */,
 				F6769EFB2C1ADCF300593E3E /* Base in Resources */,
 			);
@@ -341,28 +694,78 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F607A9B12C5B70180023ADEF /* AppCoordinator.swift in Sources */,
+				F6EFC2A82C5CD2FE00D221B8 /* SecondModuleCoordinator.swift in Sources */,
 				F6769F2F2C1B006B00593E3E /* SecondViewController.swift in Sources */,
-				F6769F0D2C1ADDDC00593E3E /* FirstAssembly.swift in Sources */,
-				F6769F2E2C1B006B00593E3E /* SecondRouter.swift in Sources */,
-				F6769F0F2C1ADEDF00593E3E /* FirstRouter.swift in Sources */,
+				F65BFE542C5A64EA00060141 /* AsyncHttpClient.swift in Sources */,
+				F65BFE342C59F7BA00060141 /* BaseLocalization.swift in Sources */,
+				F65BFE432C5A5B6000060141 /* DialogProtocol+Extension.swift in Sources */,
+				F6121AA52C58F6CB00EA0C3F /* LoaderView.swift in Sources */,
+				F602B6F82C57D22800A22EC7 /* AppearanceColors.swift in Sources */,
+				F65BFE552C5A64EA00060141 /* ISO8601DateFormatterEx.swift in Sources */,
+				F6EFC29A2C5CBA9D00D221B8 /* FourthPresenter.swift in Sources */,
+				F6121AA72C58F7BB00EA0C3F /* HeaderView.swift in Sources */,
+				F6EFC29B2C5CBA9D00D221B8 /* FourthViewController.swift in Sources */,
+				F6EFC29C2C5CBA9D00D221B8 /* FourthWorker.swift in Sources */,
+				F6121AA02C58F56B00EA0C3F /* BaseController.swift in Sources */,
+				F61DDFF62C6F8EF100B1EC2A /* Task+Extensions.swift in Sources */,
+				F6EFC29D2C5CBA9D00D221B8 /* ThirdCoordinator.swift in Sources */,
 				F6769F132C1AF9CB00593E3E /* FirstWorker.swift in Sources */,
+				F602B7082C57DE5700A22EC7 /* Localization.swift in Sources */,
+				F602B6F62C57CCB700A22EC7 /* AppearanceFonts.swift in Sources */,
 				F6769EF32C1ADCF200593E3E /* FirstViewController.swift in Sources */,
+				F65BFE3E2C5A583E00060141 /* DialogProtocol.swift in Sources */,
+				F6121AAE2C59128600EA0C3F /* BaseButton.swift in Sources */,
+				F65BFE4C2C5A5ECA00060141 /* ToastView.swift in Sources */,
 				F6769EEF2C1ADCF200593E3E /* AppDelegate.swift in Sources */,
+				F65BFE522C5A64EA00060141 /* CompactDictionaryRepresentable.swift in Sources */,
+				F6EFC2A62C5CC93700D221B8 /* FirstModuleCoordinator.swift in Sources */,
 				F6769F112C1AF94300593E3E /* FirstData.swift in Sources */,
+				F607A9AF2C5B700E0023ADEF /* SecondCoordinator.swift in Sources */,
+				F65BFE572C5A656C00060141 /* NetworkManager.swift in Sources */,
+				F65BFE402C5A59F100060141 /* LoaderViewProtocol.swift in Sources */,
+				F6EFC2A02C5CBA9D00D221B8 /* ThirdPresenter.swift in Sources */,
 				F6769F2B2C1B006B00593E3E /* SecondData.swift in Sources */,
+				F6EFC2982C5CBA9D00D221B8 /* FourthData.swift in Sources */,
+				F607A9AC2C5B6FD20023ADEF /* BaseCoordinator.swift in Sources */,
+				F61DDFF82C6F936700B1EC2A /* Appearance.swift in Sources */,
+				F6EFC2A12C5CBA9D00D221B8 /* ThirdViewController.swift in Sources */,
+				F6121AB02C592BCC00EA0C3F /* LoaderProtocol.swift in Sources */,
+				F6121AA92C58FF5C00EA0C3F /* KeyboardService.swift in Sources */,
+				F6EFC2A22C5CBA9D00D221B8 /* ThirdWorker.swift in Sources */,
 				F6769EF12C1ADCF200593E3E /* SceneDelegate.swift in Sources */,
+				F65BFE532C5A64EA00060141 /* AsyncHttpJsonClient.swift in Sources */,
+				F6EFC29E2C5CBA9D00D221B8 /* ThirdData.swift in Sources */,
+				F6121AAC2C59102200EA0C3F /* UIView+Extensions.swift in Sources */,
 				F6769F2D2C1B006B00593E3E /* SecondPresenter.swift in Sources */,
 				F6769F0A2C1ADDC300593E3E /* FirstPresenter.swift in Sources */,
-				F6769F2A2C1B006B00593E3E /* SecondAssembly.swift in Sources */,
+				F6EFC2972C5CBA9D00D221B8 /* FourthCoordinator.swift in Sources */,
 				F6769F082C1ADDB900593E3E /* FirstInteractor.swift in Sources */,
 				F6769F302C1B006B00593E3E /* SecondWorker.swift in Sources */,
+				F65BFE492C5A5D2A00060141 /* BaseToastView.swift in Sources */,
+				F65BFE472C5A5CC500060141 /* ToastProtocol+Extension.swift in Sources */,
+				F607A9B42C5B70950023ADEF /* FirstCoordinator.swift in Sources */,
+				F602B6FA2C57D23100A22EC7 /* AppearanceImages.swift in Sources */,
+				F6EFC2992C5CBA9D00D221B8 /* FourthInteractor.swift in Sources */,
+				F65BFE452C5A5C2000060141 /* ToastProtocol.swift in Sources */,
+				F6EFC29F2C5CBA9D00D221B8 /* ThirdInteractor.swift in Sources */,
 				F6769F2C2C1B006B00593E3E /* SecondInteractor.swift in Sources */,
+				F65BFE382C5A547B00060141 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		F602B7122C57E03200A22EC7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F602B7132C57E03200A22EC7 /* ru */,
+				F602B7152C57E06E00A22EC7 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		F6769EF92C1ADCF300593E3E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -379,6 +782,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -442,6 +846,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -581,7 +986,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F6769F312C1B03B900593E3E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		F602B6FB2C57D72D00A22EC7 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
@@ -592,9 +997,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F6769F322C1B03B900593E3E /* SnapKit */ = {
+		F602B6FC2C57D72D00A22EC7 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F6769F312C1B03B900593E3E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = F602B6FB2C57D72D00A22EC7 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
