@@ -9,6 +9,6 @@ import UIKit
 
 extension Appearance.Fonts {
     enum Text {
-        static let primary = UIFont.systemFont(ofSize: 14, weight: .regular)
+        static let primary = UIFont.systemFont(ofSize: 15, weight: .medium)
     }
 }

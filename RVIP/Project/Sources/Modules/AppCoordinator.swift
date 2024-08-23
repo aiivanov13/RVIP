@@ -18,17 +18,17 @@ final class AppCoordinator: BaseCoordinator {
     }
     
     func start() {
-        showFirstModule()
+        showAuthorizationModule()
     }
     
-    private func showFirstModule() {
-        let firstCoordinator = FirstModuleCoordinator(navigationController: navigationController, parentCoordinator: self)
+    private func showAuthorizationModule() {
+        let firstCoordinator = AuthorizationModuleCoordinator(navigationController: navigationController, parentCoordinator: self)
         addChildCoordinator(firstCoordinator)
         firstCoordinator.start()
     }
     
-    func showSecondModule(with data: ThirdData) {
-        let secondCoordinator = SecondModuleCoordinator(navigationController: navigationController, parentCoordinator: self, data: data)
+    func showMainModule(with data: MainTabBarData? = nil) {
+        let secondCoordinator = MainModuleCoordinator(navigationController: navigationController, parentCoordinator: self, data: data)
         addChildCoordinator(secondCoordinator)
         secondCoordinator.start()
     }

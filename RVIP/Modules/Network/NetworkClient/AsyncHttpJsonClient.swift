@@ -72,10 +72,12 @@ private extension URLSession {
 public class AsyncHttpJsonClient: AsyncHttpClient {
 
     // MARK: - Public properties
-
+    
     public lazy var session: URLSession = {
         URLSession(configuration: configuration)
     }()
+    
+    public var baseURL: URL!
 
     // MARK: - Private properties
 
@@ -112,13 +114,14 @@ public class AsyncHttpJsonClient: AsyncHttpClient {
     }
 
     // MARK: - AsyncHttpClient Methods
-
+    
     /// GET HTTP method.
     public func get<Target: Decodable>(
-        url: URL,
+        path: String,
         parameters: [String: Any],
         tuners: [AsyncHttpRequestTuners.Keys: AsyncHttpRequestTuners]
     ) async throws -> Target {
+        let url = baseURL.appendingPathComponent(path)
         let targetUrl = try makeUrl(from: url, parameters: parameters)
         var request = URLRequest(
             url: targetUrl,
@@ -133,11 +136,12 @@ public class AsyncHttpJsonClient: AsyncHttpClient {
 
     /// POST HTTP method
     public func post<Body: Encodable, Target: Decodable>(
-        url: URL,
+        path: String,
         body: Body,
         tuners: [AsyncHttpRequestTuners.Keys: AsyncHttpRequestTuners]
     ) async throws -> Target {
-        try await perform(
+        let url = baseURL.appendingPathComponent(path)
+        return try await perform(
             method: .post,
             url: url,
             body: body,
@@ -147,11 +151,12 @@ public class AsyncHttpJsonClient: AsyncHttpClient {
 
     /// PUT HTTP method
     public func put<Body: Encodable, Target: Decodable>(
-        url: URL,
+        path: String,
         body: Body,
         tuners: [AsyncHttpRequestTuners.Keys: AsyncHttpRequestTuners]
     ) async throws -> Target {
-        try await perform(
+        let url = baseURL.appendingPathComponent(path)
+        return try await perform(
             method: .put,
             url: url,
             body: body,
@@ -161,11 +166,12 @@ public class AsyncHttpJsonClient: AsyncHttpClient {
 
     /// DELETE HTTP method
     public func delete<Body: Encodable, Target: Decodable>(
-        url: URL,
+        path: String,
         body: Body,
         tuners: [AsyncHttpRequestTuners.Keys: AsyncHttpRequestTuners]
     ) async throws -> Target {
-        try await perform(
+        let url = baseURL.appendingPathComponent(path)
+        return try await perform(
             method: .delete,
             url: url,
             body: body,
@@ -175,11 +181,12 @@ public class AsyncHttpJsonClient: AsyncHttpClient {
 
     /// PATCH HTTP method
     public func patch<Body: Encodable, Target: Decodable>(
-        url: URL,
+        path: String,
         body: Body,
         tuners: [AsyncHttpRequestTuners.Keys: AsyncHttpRequestTuners]
     ) async throws -> Target {
-        try await perform(
+        let url = baseURL.appendingPathComponent(path)
+        return try await perform(
             method: .patch,
             url: url,
             body: body,

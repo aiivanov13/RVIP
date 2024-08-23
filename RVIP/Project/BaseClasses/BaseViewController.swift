@@ -29,6 +29,7 @@ class BaseViewController: BaseController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
         setupHeader()
     }
     
@@ -37,8 +38,16 @@ class BaseViewController: BaseController {
     private func setupHeader() {
         view.addSubview(header)
         header.height = defaultNavigationBarHeight
-//        header.titleLabel.textColor = appearance.colors.black31
-//        header.titleLabel.font = appearance.fonts.baseFont.semibold16_600
+        header.textColor = Appearance.Colors.Text.primary
+        header.titleFont = Appearance.Fonts.Text.primary
         header.backgroundColor = .clear
+    }
+    
+    private func setupView() {
+        view.backgroundColor = Appearance.Colors.Background.white
+        
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = Appearance.Colors.Text.primary.withAlphaComponent(0.4)
+        loader?.backgroundView = backgroundView
     }
 }

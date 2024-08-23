@@ -12,7 +12,7 @@ import SnapKit
 
 final class LoaderView: LoaderViewProtocol {
     var view: UIView! = {
-        let image = Appearance.Images.System.loader.withTintColor(Appearance.Colors.Background.white.withAlphaComponent(0.2))
+        let image = Appearance.Images.System.loader.withTintColor(Appearance.Colors.Background.white)
         let view = UIImageView(image: image, highlightedImage: nil)
         return view
     }()

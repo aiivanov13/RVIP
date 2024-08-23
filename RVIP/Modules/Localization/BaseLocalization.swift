@@ -8,11 +8,11 @@
 import Foundation
 
 protocol BaseLocalization {
-    static func localize(_ id: String) -> String
+    static func localize(_ id: String.LocalizationValue) -> String
 }
 
 extension BaseLocalization {
-    static func localize(_ id: String) -> String {
-        NSLocalizedString(id, bundle: .main, comment: "")
+    static func localize(_ id: String.LocalizationValue) -> String {
+        String(localized: id)
     }
 }

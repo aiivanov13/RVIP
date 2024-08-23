@@ -63,6 +63,18 @@ final class HeaderView: UIView {
         set { titleLabel.text = newValue }
     }
     
+    var textColor: UIColor! {
+        didSet {
+            titleLabel.textColor = textColor
+        }
+    }
+    
+    var titleFont: UIFont! {
+        didSet {
+            titleLabel.font = titleFont
+        }
+    }
+    
     // MARK: Initializers
 
     init() {

@@ -7,11 +7,8 @@
 
 import Foundation
 
-struct Localization: BaseLocalization {
+enum Localization: BaseLocalization {
     enum Buttons {
-        static let fromViewTap = localize("fromViewTap")
-        static let fromInteractorTapButton = localize("fromInteractorTapButton")
-        static let button = localize("button")
-        static let started = localize("started")
+        static let logIn = localize("logIn")
     }
 }

@@ -7,10 +7,8 @@
 
 import UIKit
 
-struct Appearance {
+enum Appearance {
     enum Fonts { }
     enum Colors { }
     enum Images { }
-    
-    private init() { }
 }

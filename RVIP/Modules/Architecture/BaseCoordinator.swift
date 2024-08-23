@@ -16,7 +16,6 @@ protocol BaseCoordinator: AnyObject {
 }
 
 extension BaseCoordinator {
-    /// Метод для добавления дочернего координатора
     func addChildCoordinator(_ coordinator: BaseCoordinator) {
         childCoordinators.append(coordinator)
     }

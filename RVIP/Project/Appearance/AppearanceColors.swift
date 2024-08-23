@@ -9,11 +9,17 @@ import UIKit
 
 extension Appearance.Colors {
     enum Background {
-        static let blue: UIColor = UIColor(named: "Background/blue")!
-        static let green: UIColor = UIColor(named: "Background/green")!
-        static let red: UIColor = UIColor(named: "Background/red")!
-        static let yellow: UIColor = UIColor(named: "Background/yellow")!
         static let white: UIColor = UIColor(named: "Background/white")!
         static let gray: UIColor = UIColor(named: "Background/gray")!
+    }
+    
+    enum Text {
+        static let primary: UIColor = UIColor(named: "Text/Primary")!
+        static let secondary: UIColor = UIColor(named: "Text/Secondary")!
+    }
+    
+    enum Button {
+        static let blue: UIColor = UIColor(named: "Button/blue")!
+        static let white: UIColor = UIColor(named: "Button/white")!
     }
 }
