@@ -7,8 +7,6 @@
 
 import Foundation
 
-extension Localization {
-    enum Characters {
-        static let charactersHeader = localize("charactersHeader")
-    }
+struct CharactersLocalization: BaseLocalization {
+    let charactersHeader = localize("charactersHeader")
 }

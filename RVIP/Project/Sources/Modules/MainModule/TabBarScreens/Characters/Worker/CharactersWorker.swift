@@ -16,7 +16,7 @@ protocol CharactersWorkerLogicProtocol {
 //MARK: - CharactersWorker
 
 final actor CharactersWorker {
-    private var network = AsyncHttpJsonClient()
+
 }
 
 //MARK: - CharactersWorkerLogicProtocol

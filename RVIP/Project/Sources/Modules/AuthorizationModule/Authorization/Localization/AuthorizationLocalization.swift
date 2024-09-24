@@ -7,8 +7,6 @@
 
 import Foundation
 
-extension Localization {
-    enum Authorization {
-        
-    }
+struct AuthorizationLocalization: BaseLocalization {
+    
 }

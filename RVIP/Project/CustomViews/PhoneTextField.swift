@@ -31,7 +31,11 @@ final class PhoneTextField: BaseTextField {
         layer.borderColor = Appearance.Colors.Button.blue.cgColor
         layer.cornerRadius = 16
         keyboardType = .numberPad
-        placeholder = "+7 (000) 000-00-00"
+        attributedPlaceholder = NSAttributedString(
+            string: "+7 (000) 000-00-00",
+            attributes: [.foregroundColor: Appearance.Colors.Text.secondary]
+        )
+        textColor = Appearance.Colors.Text.primary
         
         onShouldChangeCharactersIn = { [weak self] _, range, string in
             guard let self = self, let text = text else { return false }

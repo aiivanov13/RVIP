@@ -1,0 +1,23 @@
+{
+  "sourceLanguage" : "ru",
+  "strings" : {
+    "charactersHeader" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Characters"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Персонажи"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

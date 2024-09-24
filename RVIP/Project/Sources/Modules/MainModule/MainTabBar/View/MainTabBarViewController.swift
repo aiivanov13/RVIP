@@ -18,15 +18,17 @@ protocol MainTabBarDisplayLogicProtocol: AnyObject {
 //MARK: - MainTabBarViewController
 
 final class MainTabBarViewController: UITabBarController {
-    private var interactor: MainTabBarBusinessLogicProtocol
+    private let localization: MainTabBarLocalization
+    private let interactor: MainTabBarBusinessLogicProtocol
     weak var coordinator: MainTabBarCoordinator?
     
     // MARK: - UI
     
     // MARK: - Initializers
     
-    init(interactor: MainTabBarBusinessLogicProtocol) {
+    init(interactor: MainTabBarBusinessLogicProtocol, localization: MainTabBarLocalization) {
         self.interactor = interactor
+        self.localization = localization
         super.init(nibName: nil, bundle: nil)
     }
     

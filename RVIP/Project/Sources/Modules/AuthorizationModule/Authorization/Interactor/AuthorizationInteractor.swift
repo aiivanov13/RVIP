@@ -16,8 +16,8 @@ protocol AuthorizationBusinessLogicProtocol {
 //MARK: - AuthorizationInteractor
 
 final class AuthorizationInteractor {
-    private var presenter: AuthorizationPresentationLogicProtocol
-    private var worker: AuthorizationWorkerLogicProtocol
+    private let presenter: AuthorizationPresentationLogicProtocol
+    private let worker: AuthorizationWorkerLogicProtocol
     private var data: AuthorizationData?
     
     // MARK: - Initializers

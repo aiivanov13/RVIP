@@ -18,7 +18,8 @@ protocol AuthorizationDisplayLogicProtocol: AnyObject {
 //MARK: - AuthorizationViewController
 
 final class AuthorizationViewController: BaseViewController {
-    private var interactor: AuthorizationBusinessLogicProtocol
+    private let localization: AuthorizationLocalization
+    private let interactor: AuthorizationBusinessLogicProtocol
     weak var coordinator: AuthorizationCoordinator?
     
     //MARK: - UI
@@ -41,7 +42,7 @@ final class AuthorizationViewController: BaseViewController {
                 coordinator?.toCodeConfirm(with: CodeConfirmData(phone: phone))
             }
         }
-        view.text = Localization.Buttons.logIn
+        view.text = Localization.logIn
         view.actionAfterAnimation = true
         view.isEnabled = false
 
@@ -57,8 +58,9 @@ final class AuthorizationViewController: BaseViewController {
     
     // MARK: - Initializers
     
-    init(interactor: AuthorizationBusinessLogicProtocol) {
+    init(interactor: AuthorizationBusinessLogicProtocol, localization: AuthorizationLocalization) {
         self.interactor = interactor
+        self.localization = localization
         super.init()
     }
     

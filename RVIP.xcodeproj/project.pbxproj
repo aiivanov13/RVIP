@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,7 +37,7 @@
 		F6376D5E2C7886A7003932E1 /* LocationsCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6376D592C7886A7003932E1 /* LocationsCollectionLayout.swift */; };
 		F6376D5F2C7886A7003932E1 /* LocationsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6376D5A2C7886A7003932E1 /* LocationsCollectionView.swift */; };
 		F6376D602C7886A7003932E1 /* LocationSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6376D5B2C7886A7003932E1 /* LocationSection.swift */; };
-		F642B8A02C74B05200658D19 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F642B89F2C74B05200658D19 /* Constants.swift */; };
+		F642B8A02C74B05200658D19 /* ServerLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F642B89F2C74B05200658D19 /* ServerLinks.swift */; };
 		F65BFE342C59F7BA00060141 /* BaseLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BFE332C59F7BA00060141 /* BaseLocalization.swift */; };
 		F65BFE382C5A547B00060141 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BFE372C5A547B00060141 /* BaseViewController.swift */; };
 		F65BFE3E2C5A583E00060141 /* DialogProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BFE3D2C5A583E00060141 /* DialogProtocol.swift */; };
@@ -72,11 +72,17 @@
 		F6A57B722C762692003F0D01 /* GetCharacterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A57B712C762692003F0D01 /* GetCharacterRequest.swift */; };
 		F6A57B742C76269F003F0D01 /* GetCharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A57B732C76269F003F0D01 /* GetCharacterResponse.swift */; };
 		F6A57B772C762B32003F0D01 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A57B762C762B32003F0D01 /* PrimaryButton.swift */; };
+		F6CEDAC42CA2ABF1008450D3 /* AuthorizationLocalization.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F6CEDAC32CA2ABF1008450D3 /* AuthorizationLocalization.xcstrings */; };
+		F6CEDAC62CA2AC08008450D3 /* CodeConfirmLocalization.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F6CEDAC52CA2AC08008450D3 /* CodeConfirmLocalization.xcstrings */; };
+		F6CEDAC82CA2D983008450D3 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CEDAC72CA2D973008450D3 /* UICollectionView+Extensions.swift */; };
+		F6E616FC2CA2A78C000568D4 /* CharactersLocalization.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F6E616FB2CA2A78C000568D4 /* CharactersLocalization.xcstrings */; };
+		F6E616FE2CA2A9C1000568D4 /* MainTabBarLocalization.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F6E616FD2CA2A9C1000568D4 /* MainTabBarLocalization.xcstrings */; };
+		F6E617002CA2A9E1000568D4 /* LocationsLocalization.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F6E616FF2CA2A9E1000568D4 /* LocationsLocalization.xcstrings */; };
 		F6EDBE6C2C77345800D8A961 /* PhoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EDBE6B2C77345800D8A961 /* PhoneTextField.swift */; };
 		F6EDBE6E2C7734F400D8A961 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EDBE6D2C7734F400D8A961 /* UIStackView+Extensions.swift */; };
 		F6EDBE702C773C7500D8A961 /* CodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EDBE6F2C773C7500D8A961 /* CodeTextField.swift */; };
 		F6EDBE732C77410600D8A961 /* CodeConfirmLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EDBE722C77410600D8A961 /* CodeConfirmLocalization.swift */; };
-		F6EDBE802C7744F000D8A961 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F6EDBE7F2C7744F000D8A961 /* Localizable.xcstrings */; };
+		F6EDBE802C7744F000D8A961 /* Localization.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F6EDBE7F2C7744F000D8A961 /* Localization.xcstrings */; };
 		F6EDBE9E2C7775E000D8A961 /* LocationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EDBE912C7775E000D8A961 /* LocationsCoordinator.swift */; };
 		F6EDBE9F2C7775E000D8A961 /* LocationsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EDBE932C7775E000D8A961 /* LocationsData.swift */; };
 		F6EDBEA02C7775E000D8A961 /* LocationsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EDBE952C7775E000D8A961 /* LocationsInteractor.swift */; };
@@ -105,6 +111,16 @@
 		F6EFC2A62C5CC93700D221B8 /* AuthorizationModuleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFC2A52C5CC93700D221B8 /* AuthorizationModuleCoordinator.swift */; };
 		F6EFC2A82C5CD2FE00D221B8 /* MainModuleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFC2A72C5CD2FE00D221B8 /* MainModuleCoordinator.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6CEDB142CA30031008450D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6769EE32C1ADCF200593E3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6769EEA2C1ADCF200593E3E;
+			remoteInfo = RVIP;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F602B6F52C57CCB700A22EC7 /* AppearanceFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceFonts.swift; sourceTree = "<group>"; };
@@ -136,7 +152,7 @@
 		F6376D592C7886A7003932E1 /* LocationsCollectionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsCollectionLayout.swift; sourceTree = "<group>"; };
 		F6376D5A2C7886A7003932E1 /* LocationsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsCollectionView.swift; sourceTree = "<group>"; };
 		F6376D5B2C7886A7003932E1 /* LocationSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSection.swift; sourceTree = "<group>"; };
-		F642B89F2C74B05200658D19 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F642B89F2C74B05200658D19 /* ServerLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerLinks.swift; sourceTree = "<group>"; };
 		F65BFE332C59F7BA00060141 /* BaseLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocalization.swift; sourceTree = "<group>"; };
 		F65BFE372C5A547B00060141 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F65BFE3D2C5A583E00060141 /* DialogProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogProtocol.swift; sourceTree = "<group>"; };
@@ -173,11 +189,18 @@
 		F6A57B712C762692003F0D01 /* GetCharacterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCharacterRequest.swift; sourceTree = "<group>"; };
 		F6A57B732C76269F003F0D01 /* GetCharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCharacterResponse.swift; sourceTree = "<group>"; };
 		F6A57B762C762B32003F0D01 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		F6CEDAC32CA2ABF1008450D3 /* AuthorizationLocalization.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AuthorizationLocalization.xcstrings; sourceTree = "<group>"; };
+		F6CEDAC52CA2AC08008450D3 /* CodeConfirmLocalization.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CodeConfirmLocalization.xcstrings; sourceTree = "<group>"; };
+		F6CEDAC72CA2D973008450D3 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		F6CEDB102CA30031008450D3 /* RVIPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RVIPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E616FB2CA2A78C000568D4 /* CharactersLocalization.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CharactersLocalization.xcstrings; sourceTree = "<group>"; };
+		F6E616FD2CA2A9C1000568D4 /* MainTabBarLocalization.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = MainTabBarLocalization.xcstrings; sourceTree = "<group>"; };
+		F6E616FF2CA2A9E1000568D4 /* LocationsLocalization.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = LocationsLocalization.xcstrings; sourceTree = "<group>"; };
 		F6EDBE6B2C77345800D8A961 /* PhoneTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneTextField.swift; sourceTree = "<group>"; };
 		F6EDBE6D2C7734F400D8A961 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
 		F6EDBE6F2C773C7500D8A961 /* CodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextField.swift; sourceTree = "<group>"; };
 		F6EDBE722C77410600D8A961 /* CodeConfirmLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeConfirmLocalization.swift; sourceTree = "<group>"; };
-		F6EDBE7F2C7744F000D8A961 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		F6EDBE7F2C7744F000D8A961 /* Localization.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localization.xcstrings; sourceTree = "<group>"; };
 		F6EDBE912C7775E000D8A961 /* LocationsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsCoordinator.swift; sourceTree = "<group>"; };
 		F6EDBE932C7775E000D8A961 /* LocationsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsData.swift; sourceTree = "<group>"; };
 		F6EDBE952C7775E000D8A961 /* LocationsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsInteractor.swift; sourceTree = "<group>"; };
@@ -206,6 +229,10 @@
 		F6EFC2A72C5CD2FE00D221B8 /* MainModuleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F6CEDB112CA30031008450D3 /* RVIPTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = RVIPTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		F6769EE82C1ADCF200593E3E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -213,6 +240,13 @@
 			files = (
 				F6EDBEB32C77836C00D8A961 /* Kingfisher in Frameworks */,
 				F602B6FD2C57D72D00A22EC7 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6CEDB0D2CA30031008450D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +318,7 @@
 		F6121AAA2C59101000EA0C3F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F6CEDAC72CA2D973008450D3 /* UICollectionView+Extensions.swift */,
 				F6121AAB2C59102200EA0C3F /* UIView+Extensions.swift */,
 				F61DDFF52C6F8EF100B1EC2A /* Task+Extensions.swift */,
 				F6EDBE6D2C7734F400D8A961 /* UIStackView+Extensions.swift */,
@@ -320,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				F6376D482C785298003932E1 /* LocationsLocalization.swift */,
+				F6E616FF2CA2A9E1000568D4 /* LocationsLocalization.xcstrings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -328,6 +364,7 @@
 			isa = PBXGroup;
 			children = (
 				F6376D4A2C785359003932E1 /* MainTabBarLocalization.swift */,
+				F6E616FD2CA2A9C1000568D4 /* MainTabBarLocalization.xcstrings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -336,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				F6376D4D2C78539B003932E1 /* AuthorizationLocalization.swift */,
+				F6CEDAC32CA2ABF1008450D3 /* AuthorizationLocalization.xcstrings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -371,11 +409,10 @@
 		F65BFE3A2C5A575F00060141 /* BaseClasses */ = {
 			isa = PBXGroup;
 			children = (
-				F65BFE562C5A656C00060141 /* NetworkManager.swift */,
+				F6CEDAC92CA2DE94008450D3 /* Network */,
 				F65BFE412C5A5B3A00060141 /* ProtocolExtensions */,
 				F65BFE3B2C5A578400060141 /* Localization */,
 				F65BFE372C5A547B00060141 /* BaseViewController.swift */,
-				F642B89F2C74B05200658D19 /* Constants.swift */,
 			);
 			path = BaseClasses;
 			sourceTree = "<group>";
@@ -383,7 +420,7 @@
 		F65BFE3B2C5A578400060141 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
-				F6EDBE7F2C7744F000D8A961 /* Localizable.xcstrings */,
+				F6EDBE7F2C7744F000D8A961 /* Localization.xcstrings */,
 				F602B7072C57DE5700A22EC7 /* Localization.swift */,
 			);
 			path = Localization;
@@ -432,6 +469,7 @@
 			isa = PBXGroup;
 			children = (
 				F6769EED2C1ADCF200593E3E /* RVIP */,
+				F6CEDB112CA30031008450D3 /* RVIPTests */,
 				F6769EEC2C1ADCF200593E3E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -440,6 +478,7 @@
 			isa = PBXGroup;
 			children = (
 				F6769EEB2C1ADCF200593E3E /* RVIP.app */,
+				F6CEDB102CA30031008450D3 /* RVIPTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -639,10 +678,20 @@
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
+		F6CEDAC92CA2DE94008450D3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F642B89F2C74B05200658D19 /* ServerLinks.swift */,
+				F65BFE562C5A656C00060141 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		F6EDBE712C7740F600D8A961 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
 				F6EDBE722C77410600D8A961 /* CodeConfirmLocalization.swift */,
+				F6CEDAC52CA2AC08008450D3 /* CodeConfirmLocalization.xcstrings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -750,6 +799,7 @@
 			isa = PBXGroup;
 			children = (
 				F6EDBEB42C77847600D8A961 /* CharactersLocalization.swift */,
+				F6E616FB2CA2A78C000568D4 /* CharactersLocalization.xcstrings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -922,6 +972,29 @@
 			productReference = F6769EEB2C1ADCF200593E3E /* RVIP.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F6CEDB0F2CA30031008450D3 /* RVIPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6CEDB162CA30031008450D3 /* Build configuration list for PBXNativeTarget "RVIPTests" */;
+			buildPhases = (
+				F6CEDB0C2CA30031008450D3 /* Sources */,
+				F6CEDB0D2CA30031008450D3 /* Frameworks */,
+				F6CEDB0E2CA30031008450D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6CEDB152CA30031008450D3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F6CEDB112CA30031008450D3 /* RVIPTests */,
+			);
+			name = RVIPTests;
+			packageProductDependencies = (
+			);
+			productName = RVIPTests;
+			productReference = F6CEDB102CA30031008450D3 /* RVIPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -929,11 +1002,16 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1540;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					F6769EEA2C1ADCF200593E3E = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					F6CEDB0F2CA30031008450D3 = {
+						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
+						TestTargetID = F6769EEA2C1ADCF200593E3E;
 					};
 				};
 			};
@@ -956,6 +1034,7 @@
 			projectRoot = "";
 			targets = (
 				F6769EEA2C1ADCF200593E3E /* RVIP */,
+				F6CEDB0F2CA30031008450D3 /* RVIPTests */,
 			);
 		};
 /* End PBXProject section */
@@ -966,10 +1045,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				F602B7002C57D7BA00A22EC7 /* Colors.xcassets in Resources */,
-				F6EDBE802C7744F000D8A961 /* Localizable.xcstrings in Resources */,
+				F6EDBE802C7744F000D8A961 /* Localization.xcstrings in Resources */,
 				F602B7022C57D7C800A22EC7 /* Images.xcassets in Resources */,
 				F6769EF82C1ADCF300593E3E /* Assets.xcassets in Resources */,
+				F6CEDAC42CA2ABF1008450D3 /* AuthorizationLocalization.xcstrings in Resources */,
+				F6E616FE2CA2A9C1000568D4 /* MainTabBarLocalization.xcstrings in Resources */,
+				F6CEDAC62CA2AC08008450D3 /* CodeConfirmLocalization.xcstrings in Resources */,
+				F6E616FC2CA2A78C000568D4 /* CharactersLocalization.xcstrings in Resources */,
 				F6769EFB2C1ADCF300593E3E /* Base in Resources */,
+				F6E617002CA2A9E1000568D4 /* LocationsLocalization.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6CEDB0E2CA30031008450D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -987,7 +1078,7 @@
 				F65BFE542C5A64EA00060141 /* AsyncHttpClient.swift in Sources */,
 				F65BFE342C59F7BA00060141 /* BaseLocalization.swift in Sources */,
 				F6EDBEB02C77801C00D8A961 /* CharacterSection.swift in Sources */,
-				F642B8A02C74B05200658D19 /* Constants.swift in Sources */,
+				F642B8A02C74B05200658D19 /* ServerLinks.swift in Sources */,
 				F6EDBEA22C7775E000D8A961 /* LocationsViewController.swift in Sources */,
 				F65BFE432C5A5B6000060141 /* DialogProtocol+Extension.swift in Sources */,
 				F6376D542C788508003932E1 /* GetLocationRequest.swift in Sources */,
@@ -1029,6 +1120,7 @@
 				F6EDBEAE2C777FCD00D8A961 /* CharactersCollectionLayout.swift in Sources */,
 				F6769F112C1AF94300593E3E /* CodeConfirmData.swift in Sources */,
 				F607A9AF2C5B700E0023ADEF /* AuthorizationCoordinator.swift in Sources */,
+				F6CEDAC82CA2D983008450D3 /* UICollectionView+Extensions.swift in Sources */,
 				F65BFE572C5A656C00060141 /* NetworkManager.swift in Sources */,
 				F65BFE402C5A59F100060141 /* LoaderViewProtocol.swift in Sources */,
 				F6376D492C785298003932E1 /* LocationsLocalization.swift in Sources */,
@@ -1073,7 +1165,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F6CEDB0C2CA30031008450D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6CEDB152CA30031008450D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6769EEA2C1ADCF200593E3E /* RVIP */;
+			targetProxy = F6CEDB142CA30031008450D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F6769EF92C1ADCF300593E3E /* LaunchScreen.storyboard */ = {
@@ -1147,6 +1254,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -1204,6 +1312,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1222,7 +1331,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1254,7 +1363,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1269,6 +1378,47 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F6CEDB172CA30031008450D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TZVA33YQZA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xelaVi.RVIPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RVIP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RVIP";
+			};
+			name = Debug;
+		};
+		F6CEDB182CA30031008450D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TZVA33YQZA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xelaVi.RVIPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RVIP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RVIP";
 			};
 			name = Release;
 		};
@@ -1289,6 +1439,15 @@
 			buildConfigurations = (
 				F6769F002C1ADCF300593E3E /* Debug */,
 				F6769F012C1ADCF300593E3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6CEDB162CA30031008450D3 /* Build configuration list for PBXNativeTarget "RVIPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6CEDB172CA30031008450D3 /* Debug */,
+				F6CEDB182CA30031008450D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

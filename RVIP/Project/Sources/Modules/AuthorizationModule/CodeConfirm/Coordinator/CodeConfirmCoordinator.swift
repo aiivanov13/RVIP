@@ -20,11 +20,12 @@ final class CodeConfirmCoordinator: BaseCoordinator {
     }
     
     func start() {
+        let localization = CodeConfirmLocalization()
         let userSession = UserSession()
         let presenter = CodeConfirmPresenter()
         let worker = CodeConfirmWorker(userSession: userSession)
         let interactor = CodeConfirmInteractor(presenter: presenter, worker: worker, data: data)
-        let view = CodeConfirmViewController(interactor: interactor)
+        let view = CodeConfirmViewController(interactor: interactor, localization: localization)
         
         view.coordinator = self
         presenter.view = view

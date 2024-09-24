@@ -16,8 +16,8 @@ protocol MainTabBarBusinessLogicProtocol {
 //MARK: - MainTabBarInteractor
 
 final actor MainTabBarInteractor {
-    private var presenter: MainTabBarPresentationLogicProtocol
-    private var worker: ThirdWorkerLogicProtocol
+    private let presenter: MainTabBarPresentationLogicProtocol
+    private let worker: ThirdWorkerLogicProtocol
     private var data: MainTabBarData?
     
     // MARK: - Initializers

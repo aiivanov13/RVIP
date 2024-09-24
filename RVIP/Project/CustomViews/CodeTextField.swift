@@ -31,7 +31,12 @@ final class CodeTextField: BaseTextField {
         layer.borderColor = Appearance.Colors.Button.blue.cgColor
         layer.cornerRadius = 16
         textAlignment = .center
-        placeholder = "0-0-0-0-0-0"
+        keyboardType = .numberPad
+        attributedPlaceholder = NSAttributedString(
+            string: "0-0-0-0-0-0",
+            attributes: [.foregroundColor: Appearance.Colors.Text.secondary]
+        )
+        textColor = Appearance.Colors.Text.primary
         
         onShouldChangeCharactersIn = { [weak self] _, range, string in
             guard let self = self, let text = text else { return false }

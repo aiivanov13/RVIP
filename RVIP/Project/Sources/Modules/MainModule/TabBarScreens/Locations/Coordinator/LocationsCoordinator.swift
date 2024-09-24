@@ -20,14 +20,20 @@ final class LocationsCoordinator: BaseCoordinator {
     }
     
     func start() {
+        let localization = LocationsLocalization()
         let presenter = LocationsPresenter()
         let worker = LocationsWorker()
         let interactor = LocationsInteractor(presenter: presenter, worker: worker, data: data)
-        let view = LocationsViewController(interactor: interactor)
+        let view = LocationsViewController(interactor: interactor, localization: localization)
         view.coordinator = self
         presenter.view = view
-        view.tabBarItem = UITabBarItem(title: "Locations", image: Appearance.Images.TabBar.pin, tag: 1)
-
+        
+        view.tabBarItem = UITabBarItem(
+            title: localization.locationsHeader,
+            image: Appearance.Images.TabBar.pin,
+            tag: 1
+        )
+        
         navigationController.setViewControllers([view], animated: false)
     }
 }

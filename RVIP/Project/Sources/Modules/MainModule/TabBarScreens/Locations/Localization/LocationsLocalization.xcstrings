@@ -1,0 +1,23 @@
+{
+  "sourceLanguage" : "ru",
+  "strings" : {
+    "locationsHeader" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Locations"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Локации"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

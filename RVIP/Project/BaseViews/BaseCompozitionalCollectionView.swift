@@ -7,6 +7,8 @@
 
 import UIKit
 
+// MARK: - BaseCompozitionalCollectionView
+
 class BaseCompozitionalCollectionView: UICollectionView {
     
     var isAutoDimensionHeight: Bool = false
@@ -36,6 +38,9 @@ class BaseCompozitionalCollectionView: UICollectionView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+// MARK: - UICollectionViewDataSource
+
 extension BaseCompozitionalCollectionView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         numberOfItemsInSection?(self, section) ?? 0
@@ -47,31 +52,5 @@ extension BaseCompozitionalCollectionView: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         cellForItemAt?(self, indexPath) ?? UICollectionViewCell()
-    }
-}
-
-extension UICollectionView {
-    func registerNib(_ cellType: UICollectionViewCell.Type) {
-        register(UINib(nibName: String(describing: cellType), bundle: nil), forCellWithReuseIdentifier: String(describing: cellType))
-    }
-    
-    func registerHeader<Header: UICollectionReusableView>(_ type: Header.Type) {
-        register(type, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: String(describing: type))
-    }
-
-    func register<Cell: UICollectionViewCell>(_ type: Cell.Type) {
-        register(type, forCellWithReuseIdentifier: String(describing: type))
-    }
-    
-    func dequeueHeader<Header: UICollectionReusableView>(_ header: Header.Type, for indexPath: IndexPath, ofKind: String) -> Header {
-        return dequeueReusableSupplementaryView(ofKind: ofKind, withReuseIdentifier: String(describing: header), for: indexPath) as! Header
-    }
-
-    func dequeue<Cell: UICollectionViewCell>(_ cell: Cell.Type, for indexPath: IndexPath) -> Cell {
-        return dequeueReusableCell(withReuseIdentifier: String(describing: cell), for: indexPath) as! Cell
-    }
-
-    func dequeue<Cell: UICollectionViewCell>(_ cell: Cell.Type, for row: Int) -> Cell {
-        return dequeue(cell, for: IndexPath(row: row, section: 0))
     }
 }

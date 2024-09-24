@@ -13,6 +13,6 @@ protocol BaseLocalization {
 
 extension BaseLocalization {
     static func localize(_ id: String.LocalizationValue) -> String {
-        String(localized: id)
+        return String(localized: id, table: String(describing: self))
     }
 }

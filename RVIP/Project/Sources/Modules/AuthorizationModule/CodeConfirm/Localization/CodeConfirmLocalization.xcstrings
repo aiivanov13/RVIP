@@ -1,0 +1,23 @@
+{
+  "sourceLanguage" : "ru",
+  "strings" : {
+    "codeConfirmHeader" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Code Confirm"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Код подтверждения"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

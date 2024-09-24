@@ -20,10 +20,11 @@ final class AuthorizationCoordinator: BaseCoordinator {
     }
     
     func start() {
+        let localization = AuthorizationLocalization()
         let presenter = AuthorizationPresenter()
         let worker = AuthorizationWorker()
         let interactor = AuthorizationInteractor(presenter: presenter, worker: worker, data: data)
-        let view = AuthorizationViewController(interactor: interactor)
+        let view = AuthorizationViewController(interactor: interactor, localization: localization)
 
         view.coordinator = self
         presenter.view = view

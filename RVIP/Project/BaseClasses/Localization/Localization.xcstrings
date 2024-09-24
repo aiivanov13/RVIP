@@ -1,0 +1,23 @@
+{
+  "sourceLanguage" : "ru",
+  "strings" : {
+    "logIn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log In"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Войти"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

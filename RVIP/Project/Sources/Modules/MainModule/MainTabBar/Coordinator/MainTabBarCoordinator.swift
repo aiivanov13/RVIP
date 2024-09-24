@@ -20,10 +20,11 @@ final class MainTabBarCoordinator: BaseCoordinator {
     }
     
     func start() {
+        let localization = MainTabBarLocalization()
         let presenter = MainTabBarPresenter()
         let worker = MainTabBarWorker()
         let interactor = MainTabBarInteractor(presenter: presenter, worker: worker, data: data)
-        let view = MainTabBarViewController(interactor: interactor)
+        let view = MainTabBarViewController(interactor: interactor, localization: localization)
         
         view.coordinator = self
         view.viewControllers = configureControllers()
@@ -38,13 +39,19 @@ final class MainTabBarCoordinator: BaseCoordinator {
         var controllers = [UIViewController]()
         var coordinators = [BaseCoordinator]()
         
-        let charactersCoordinator = CharactersCoordinator(navigationController: UINavigationController(), data: CharactersData(characters: data.characters))
-        let locationsCoordinator = LocationsCoordinator(navigationController: UINavigationController(), data: LocationsData(locations: data.locations))
+        let charactersCoordinator = CharactersCoordinator(
+            navigationController: UINavigationController(),
+            data: CharactersData(characters: data.characters)
+        )
+        let locationsCoordinator = LocationsCoordinator(
+            navigationController: UINavigationController(),
+            data: LocationsData(locations: data.locations)
+        )
         
         coordinators.append(charactersCoordinator)
         coordinators.append(locationsCoordinator)
-        
         childCoordinators.append(contentsOf: coordinators)
+        
         controllers = childCoordinators.map {
             $0.start()
             return $0.navigationController

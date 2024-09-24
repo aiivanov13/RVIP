@@ -20,20 +20,23 @@ protocol LocationsDisplayLogicProtocol: AnyObject {
 //MARK: - LocationsViewController
 
 final class LocationsViewController: BaseViewController {
-    private var interactor: LocationsBusinessLogicProtocol
+    private let localization: LocationsLocalization
+    private let interactor: LocationsBusinessLogicProtocol
     weak var coordinator: LocationsCoordinator?
     
     //MARK: - UI
     
     private lazy var locationsCollection: LocationsCollectionView = {
         let view = LocationsCollectionView()
+        view.backgroundColor = .clear
         return view
     }()
     
     // MARK: - Initializers
     
-    init(interactor: LocationsBusinessLogicProtocol) {
+    init(interactor: LocationsBusinessLogicProtocol, localization: LocationsLocalization) {
         self.interactor = interactor
+        self.localization = localization
         super.init()
     }
     
@@ -58,7 +61,7 @@ final class LocationsViewController: BaseViewController {
     // MARK: - Setups
     
     private func setupView() {
-        header.title = Localization.Locations.locationsHeader
+        header.title = localization.locationsHeader
     }
     
     private func setupHierarchy() {

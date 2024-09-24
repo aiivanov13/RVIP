@@ -7,8 +7,6 @@
 
 import Foundation
 
-extension Localization {
-    enum CodeConfirm {
-        static let codeConfirmHeader = localize("codeConfirmHeader")
-    }
+struct CodeConfirmLocalization: BaseLocalization {
+    let codeConfirmHeader = localize("codeConfirmHeader")
 }

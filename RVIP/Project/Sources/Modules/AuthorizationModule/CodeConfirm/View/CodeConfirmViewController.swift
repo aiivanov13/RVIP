@@ -21,7 +21,8 @@ protocol CodeConfirmDisplayLogicProtocol: AnyObject {
 //MARK: - CodeConfirmViewController
 
 final class CodeConfirmViewController: BaseViewController {
-    private var interactor: CodeConfirmBusinessLogicProtocol
+    private let localization: CodeConfirmLocalization
+    private let interactor: CodeConfirmBusinessLogicProtocol
     weak var coordinator: CodeConfirmCoordinator?
     
     // MARK: - UI
@@ -45,7 +46,7 @@ final class CodeConfirmViewController: BaseViewController {
     
     private lazy var logInButton: PrimaryButton = {
         let view = PrimaryButton()
-        view.text = Localization.Buttons.logIn
+        view.text = Localization.logIn
         view.onTap = { [weak self] _ in
             guard let self = self else { return }
             
@@ -69,8 +70,9 @@ final class CodeConfirmViewController: BaseViewController {
     
     // MARK: - Initializers
     
-    init(interactor: CodeConfirmBusinessLogicProtocol) {
+    init(interactor: CodeConfirmBusinessLogicProtocol, localization: CodeConfirmLocalization) {
         self.interactor = interactor
+        self.localization = localization
         super.init()
     }
     
@@ -95,7 +97,7 @@ final class CodeConfirmViewController: BaseViewController {
     // MARK: - Setups
     
     private func setupView() {
-        header.title = Localization.CodeConfirm.codeConfirmHeader
+        header.title = localization.codeConfirmHeader
     }
     
     private func setupHierarchy() {

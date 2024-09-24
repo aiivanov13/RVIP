@@ -20,13 +20,19 @@ final class CharactersCoordinator: BaseCoordinator {
     }
     
     func start() {
+        let localization = CharactersLocalization()
         let presenter = CharactersPresenter()
         let worker = CharactersWorker()
         let interactor = CharactersInteractor(presenter: presenter, worker: worker, data: data)
-        let view = CharactersViewController(interactor: interactor)
+        let view = CharactersViewController(interactor: interactor, localization: localization)
         view.coordinator = self
         presenter.view = view
-        view.tabBarItem = UITabBarItem(title: "Characters", image: Appearance.Images.TabBar.person, tag: 0)
+        
+        view.tabBarItem = UITabBarItem(
+            title: localization.charactersHeader,
+            image: Appearance.Images.TabBar.person,
+            tag: 0
+        )
         
         navigationController.setViewControllers([view], animated: false)
     }

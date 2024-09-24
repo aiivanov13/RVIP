@@ -125,8 +125,7 @@ public class AsyncHttpJsonClient: AsyncHttpClient {
         let targetUrl = try makeUrl(from: url, parameters: parameters)
         var request = URLRequest(
             url: targetUrl,
-            cachePolicy: .useProtocolCachePolicy,
-            timeoutInterval: .defaultAsyncRequestTimeout
+            cachePolicy: .useProtocolCachePolicy
         )
         if case .request(let requestTuner)? = tuners[.request] {
             requestTuner(&request)

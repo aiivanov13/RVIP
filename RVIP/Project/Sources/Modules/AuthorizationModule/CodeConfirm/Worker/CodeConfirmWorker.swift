@@ -28,10 +28,10 @@ final actor CodeConfirmWorker {
 
 extension CodeConfirmWorker: CodeConfirmWorkerLogicProtocol {
     func getLocations() async -> GetLocationResponse? {
-        return try? await userSession.networkClient.get(path: API.getLocation)
+        try? await userSession.networkClient.get(path: "api/location")
     }
     
     func getCharacters() async -> GetCharacterResponse? {
-        return try? await userSession.networkClient.get(path: API.getCharacter)
+        try? await userSession.networkClient.get(path: "/api/character")
     }
 }

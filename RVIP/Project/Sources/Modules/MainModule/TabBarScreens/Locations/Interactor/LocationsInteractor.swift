@@ -16,8 +16,8 @@ protocol LocationsBusinessLogicProtocol {
 //MARK: - LocationsInteractor
 
 final class LocationsInteractor {
-    private var presenter: LocationsPresentationLogicProtocol
-    private var worker: LocationsWorkerLogicProtocol
+    private let presenter: LocationsPresentationLogicProtocol
+    private let worker: LocationsWorkerLogicProtocol
     private var data: LocationsData?
     
     // MARK: - Initializers

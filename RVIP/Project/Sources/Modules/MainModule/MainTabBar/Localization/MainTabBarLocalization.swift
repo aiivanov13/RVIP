@@ -7,8 +7,6 @@
 
 import Foundation
 
-extension Localization {
-    enum MainTabBar {
-        
-    }
+struct MainTabBarLocalization: BaseLocalization {
+    
 }

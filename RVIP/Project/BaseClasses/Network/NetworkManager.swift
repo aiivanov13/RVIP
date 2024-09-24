@@ -7,31 +7,21 @@
 
 import Foundation
 
-enum ApiVersion {
-    case beta
-    case dev
-    
-    var stringURL: String {
-        switch self {
-        case .beta:
-            return ServerLinks.betaURL
-        case .dev:
-            return ServerLinks.devURL
-        }
-    }
-}
+// MARK: - UserSessionProtocol
 
 protocol UserSessionProtocol {
-    var apiVersion: ApiVersion! { get set }
+    var serverLink: ServerLink! { get set }
     var networkClient: AsyncHttpClient! { get }
 }
 
+// MARK: - UserSession
+
 final class UserSession: UserSessionProtocol {
     var networkClient: AsyncHttpClient!
-    var apiVersion: ApiVersion! {
+    var serverLink: ServerLink! {
         didSet {
             do {
-                let url = try endpoint(baseURL: apiVersion.stringURL)
+                let url = try endpoint(baseURL: serverLink.stringURL)
                 networkClient.baseURL = url
             } catch {
                 print("Ошибка создания URL: \(error.localizedDescription)")
@@ -43,6 +33,8 @@ final class UserSession: UserSessionProtocol {
         "Authorization": "token"
     ]
     
+    private let timeoutIntervalForRequest: TimeInterval = 60
+    
     init() {
         setupNetworkClient()
     }
@@ -50,8 +42,9 @@ final class UserSession: UserSessionProtocol {
     private func setupNetworkClient() {
         let configuration = URLSessionConfiguration.default
         configuration.httpAdditionalHeaders = headers
+        configuration.timeoutIntervalForRequest = timeoutIntervalForRequest
         networkClient = AsyncHttpJsonClient(configuration: configuration, requestRetrier: self, responseValidator: self)
-        apiVersion = .beta
+        serverLink = .rickandmorty
     }
     
     private func endpoint(baseURL: String) throws -> URL {
@@ -60,11 +53,15 @@ final class UserSession: UserSessionProtocol {
     }
 }
 
+// MARK: - AsyncHttpResponseValidator
+
 extension UserSession: AsyncHttpResponseValidator {
     func validate(response: HTTPURLResponse, data: Data?) throws {
         
     }
 }
+
+// MARK: - AsyncHttpRequestRetrier
 
 extension UserSession: AsyncHttpRequestRetrier {
     func shouldRetry(request: URLRequest, error: any Error) async -> Bool {

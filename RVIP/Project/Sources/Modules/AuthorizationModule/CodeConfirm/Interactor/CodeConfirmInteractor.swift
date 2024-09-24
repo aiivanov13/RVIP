@@ -17,8 +17,8 @@ protocol CodeConfirmBusinessLogicProtocol {
 //MARK: - CodeConfirmInteractor
 
 final actor CodeConfirmInteractor {
-    private var presenter: CodeConfirmPresentationLogicProtocol
-    private var worker: CodeConfirmWorkerLogicProtocol
+    private let presenter: CodeConfirmPresentationLogicProtocol
+    private let worker: CodeConfirmWorkerLogicProtocol
     private var data: CodeConfirmData?
     
     // MARK: - Initializers

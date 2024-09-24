@@ -8,7 +8,5 @@
 import Foundation
 
 enum Localization: BaseLocalization {
-    enum Buttons {
-        static let logIn = localize("logIn")
-    }
+    static let logIn = localize("logIn")
 }

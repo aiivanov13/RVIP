@@ -16,8 +16,8 @@ protocol CharactersBusinessLogicProtocol {
 //MARK: - CharactersInteractor
 
 final class CharactersInteractor {
-    private var presenter: CharactersPresentationLogicProtocol
-    private var worker: CharactersWorkerLogicProtocol
+    private let presenter: CharactersPresentationLogicProtocol
+    private let worker: CharactersWorkerLogicProtocol
     private var data: CharactersData?
     
     // MARK: - Initializers

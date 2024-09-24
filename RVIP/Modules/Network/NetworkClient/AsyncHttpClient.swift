@@ -25,10 +25,6 @@ public enum AsyncHttpRequestTuners {
     }
 }
 
-public extension TimeInterval {
-    static var defaultAsyncRequestTimeout = 60.0
-}
-
 public struct AsyncHttpClientEmpty: Codable {
     public init() {}
 }
@@ -78,7 +74,6 @@ public protocol AsyncHttpClient {
 
 /// Расширение делающее необязательными некоторые параметры и возвращаемые результаты
 public extension AsyncHttpClient {
-    
     func get<Target: Decodable>(
         path: String,
         parameters: [String: Any] = [:]
@@ -201,7 +196,6 @@ public extension AsyncHttpClient {
 // MARK: - Private part
 
 private extension AsyncHttpClient {
-
     func emptyResponseCall(body: () async throws -> Void) async rethrows {
         do {
             try await body()

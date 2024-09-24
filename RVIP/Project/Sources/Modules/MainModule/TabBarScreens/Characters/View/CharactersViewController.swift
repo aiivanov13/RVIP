@@ -20,20 +20,23 @@ protocol CharactersDisplayLogicProtocol: AnyObject {
 //MARK: - CharactersViewController
 
 final class CharactersViewController: BaseViewController {
-    private var interactor: CharactersBusinessLogicProtocol
+    private let localization: CharactersLocalization
+    private let interactor: CharactersBusinessLogicProtocol
     weak var coordinator: CharactersCoordinator?
     
     //MARK: - UI
     
     private lazy var charactersCollection: CharactersCollectionView = {
         let view = CharactersCollectionView()
+        view.backgroundColor = .clear
         return view
     }()
     
     // MARK: - Initializers
     
-    init(interactor: CharactersBusinessLogicProtocol) {
+    init(interactor: CharactersBusinessLogicProtocol, localization: CharactersLocalization) {
         self.interactor = interactor
+        self.localization = localization
         super.init()
     }
     
@@ -58,7 +61,7 @@ final class CharactersViewController: BaseViewController {
     // MARK: - Setups
     
     private func setupView() {
-        header.title = Localization.Characters.charactersHeader
+        header.title = localization.charactersHeader
     }
 
     private func setupHierarchy() {

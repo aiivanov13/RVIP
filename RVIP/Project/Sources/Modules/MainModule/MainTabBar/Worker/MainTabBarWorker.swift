@@ -10,7 +10,7 @@ import Foundation
 //MARK: - Interfaces
 
 protocol ThirdWorkerLogicProtocol {
-    var title: String { get async }
+
 }
 
 //MARK: - MainTabBarWorker
@@ -22,9 +22,5 @@ final actor MainTabBarWorker {
 //MARK: - ThirdWorkerLogicProtocol
 
 extension MainTabBarWorker: ThirdWorkerLogicProtocol {
-    var title: String {
-        get async {
-            "routeThroughInteractor"
-        }
-    }
+
 }

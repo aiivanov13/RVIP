@@ -7,8 +7,6 @@
 
 import Foundation
 
-extension Localization {
-    enum Locations {
-        static let locationsHeader = localize("locationsHeader")
-    }
+struct LocationsLocalization: BaseLocalization {
+    let locationsHeader = localize("locationsHeader")
 }
