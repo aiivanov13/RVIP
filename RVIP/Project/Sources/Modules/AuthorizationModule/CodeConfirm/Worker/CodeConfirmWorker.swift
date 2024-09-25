@@ -10,8 +10,8 @@ import Foundation
 //MARK: - Interfaces
 
 protocol CodeConfirmWorkerLogicProtocol {
-    func getCharacters() async -> GetCharacterResponse?
-    func getLocations() async -> GetLocationResponse?
+    func getCharacters() async throws -> GetCharacterResponse
+    func getLocations() async throws -> GetLocationResponse
 }
 
 //MARK: - CodeConfirmWorker
@@ -27,11 +27,11 @@ final actor CodeConfirmWorker {
 //MARK: - CodeConfirmWorkerLogicProtocol
 
 extension CodeConfirmWorker: CodeConfirmWorkerLogicProtocol {
-    func getLocations() async -> GetLocationResponse? {
-        try? await userSession.networkClient.get(path: "api/location")
+    func getLocations() async throws -> GetLocationResponse {
+        try await userSession.networkClient.get(path: "api/location")
     }
     
-    func getCharacters() async -> GetCharacterResponse? {
-        try? await userSession.networkClient.get(path: "/api/character")
+    func getCharacters() async throws -> GetCharacterResponse {
+        try await userSession.networkClient.get(path: "/api/character")
     }
 }

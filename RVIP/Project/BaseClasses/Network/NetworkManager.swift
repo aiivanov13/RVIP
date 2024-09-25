@@ -57,7 +57,12 @@ final class UserSession: UserSessionProtocol {
 
 extension UserSession: AsyncHttpResponseValidator {
     func validate(response: HTTPURLResponse, data: Data?) throws {
-        
+//        switch response.statusCode {
+//        case 400...499:
+//            throw URLError(URLError.Code(rawValue: response.statusCode))
+//        default:
+//            break
+//        }
     }
 }
 

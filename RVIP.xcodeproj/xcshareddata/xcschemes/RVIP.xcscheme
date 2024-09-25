@@ -35,7 +35,7 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F6CEDAFF2CA2FD59008450D3"
+               BlueprintIdentifier = "F6CEDB0F2CA30031008450D3"
                BuildableName = "RVIPTests.xctest"
                BlueprintName = "RVIPTests"
                ReferencedContainer = "container:RVIP.xcodeproj">

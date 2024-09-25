@@ -39,9 +39,13 @@ extension CodeConfirmInteractor: CodeConfirmBusinessLogicProtocol {
     }
     
     func fetchData() async {
-        guard let characters = await worker.getCharacters() else { return }
-        guard let locations = await worker.getLocations() else { return }
-        
-        await presenter.dataFetchingSuccess(characters: characters, locations: locations)
+        do {
+            let characters = try await worker.getCharacters()
+            let locations = try await worker.getLocations()
+            
+            await presenter.dataFetchingSuccess(characters: characters, locations: locations)
+        } catch {
+            print("ошибка \(error)")
+        }
     }
 }

@@ -279,7 +279,6 @@ public class AsyncHttpJsonClient: AsyncHttpClient {
         print("Request URL: \(response.url!)")
         print("Request Headers: \(session.configuration.httpAdditionalHeaders ?? [:])")
         
-        
         print("\n\(response)\n")
         
         try validate(response, data: data)
