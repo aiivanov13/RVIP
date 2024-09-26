@@ -1,5 +1,5 @@
 //
-//  CodeConfirmTests.swift
+//  CodeConfirmWorkerTests.swift
 //  RVIPTests
 //
 //  Created by Александр Иванов on 24.09.2024.

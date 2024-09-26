@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -72,6 +72,8 @@
 		F6A57B722C762692003F0D01 /* GetCharacterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A57B712C762692003F0D01 /* GetCharacterRequest.swift */; };
 		F6A57B742C76269F003F0D01 /* GetCharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A57B732C76269F003F0D01 /* GetCharacterResponse.swift */; };
 		F6A57B772C762B32003F0D01 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A57B762C762B32003F0D01 /* PrimaryButton.swift */; };
+		F6BF83512CA523F80090A647 /* CodeConfirmWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF83502CA523F80090A647 /* CodeConfirmWorkerTests.swift */; };
+		F6BF835A2CA526B40090A647 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6BF83562CA525130090A647 /* XCTest.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6CEDAC42CA2ABF1008450D3 /* AuthorizationLocalization.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F6CEDAC32CA2ABF1008450D3 /* AuthorizationLocalization.xcstrings */; };
 		F6CEDAC62CA2AC08008450D3 /* CodeConfirmLocalization.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F6CEDAC52CA2AC08008450D3 /* CodeConfirmLocalization.xcstrings */; };
 		F6CEDAC82CA2D983008450D3 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CEDAC72CA2D973008450D3 /* UICollectionView+Extensions.swift */; };
@@ -121,6 +123,20 @@
 			remoteInfo = RVIP;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6BF835B2CA526B40090A647 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F6BF835A2CA526B40090A647 /* XCTest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F602B6F52C57CCB700A22EC7 /* AppearanceFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceFonts.swift; sourceTree = "<group>"; };
@@ -189,6 +205,8 @@
 		F6A57B712C762692003F0D01 /* GetCharacterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCharacterRequest.swift; sourceTree = "<group>"; };
 		F6A57B732C76269F003F0D01 /* GetCharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCharacterResponse.swift; sourceTree = "<group>"; };
 		F6A57B762C762B32003F0D01 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		F6BF83502CA523F80090A647 /* CodeConfirmWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeConfirmWorkerTests.swift; sourceTree = "<group>"; };
+		F6BF83562CA525130090A647 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F6CEDAC32CA2ABF1008450D3 /* AuthorizationLocalization.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AuthorizationLocalization.xcstrings; sourceTree = "<group>"; };
 		F6CEDAC52CA2AC08008450D3 /* CodeConfirmLocalization.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CodeConfirmLocalization.xcstrings; sourceTree = "<group>"; };
 		F6CEDAC72CA2D973008450D3 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
@@ -228,10 +246,6 @@
 		F6EFC2A52C5CC93700D221B8 /* AuthorizationModuleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationModuleCoordinator.swift; sourceTree = "<group>"; };
 		F6EFC2A72C5CD2FE00D221B8 /* MainModuleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		F6CEDB112CA30031008450D3 /* RVIPTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = RVIPTests; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F6769EE82C1ADCF200593E3E /* Frameworks */ = {
@@ -469,7 +483,7 @@
 			isa = PBXGroup;
 			children = (
 				F6769EED2C1ADCF200593E3E /* RVIP */,
-				F6CEDB112CA30031008450D3 /* RVIPTests */,
+				F6BF83552CA525130090A647 /* Frameworks */,
 				F6769EEC2C1ADCF200593E3E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -534,6 +548,7 @@
 		F6769F062C1ADDA600593E3E /* CodeConfirm */ = {
 			isa = PBXGroup;
 			children = (
+				F6BF83582CA525350090A647 /* Tests */,
 				F6EDBE712C7740F600D8A961 /* Localization */,
 				F607A9B22C5B70850023ADEF /* Coordinator */,
 				F6769F142C1AFE9500593E3E /* View */,
@@ -676,6 +691,22 @@
 				F6EDBE6F2C773C7500D8A961 /* CodeTextField.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		F6BF83552CA525130090A647 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6BF83562CA525130090A647 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6BF83582CA525350090A647 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F6BF83502CA523F80090A647 /* CodeConfirmWorkerTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		F6CEDAC92CA2DE94008450D3 /* Network */ = {
@@ -979,14 +1010,12 @@
 				F6CEDB0C2CA30031008450D3 /* Sources */,
 				F6CEDB0D2CA30031008450D3 /* Frameworks */,
 				F6CEDB0E2CA30031008450D3 /* Resources */,
+				F6BF835B2CA526B40090A647 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				F6CEDB152CA30031008450D3 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				F6CEDB112CA30031008450D3 /* RVIPTests */,
 			);
 			name = RVIPTests;
 			packageProductDependencies = (
@@ -1169,6 +1198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6BF83512CA523F80090A647 /* CodeConfirmWorkerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1391,6 +1421,10 @@
 				DEVELOPMENT_TEAM = TZVA33YQZA;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LD_RUNPATH_SEARCH_PATHS_SHALLOW_BUNDLE_$(SHALLOW_BUNDLE))",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xelaVi.RVIPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1412,6 +1446,10 @@
 				DEVELOPMENT_TEAM = TZVA33YQZA;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LD_RUNPATH_SEARCH_PATHS_SHALLOW_BUNDLE_$(SHALLOW_BUNDLE))",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xelaVi.RVIPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
